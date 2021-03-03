@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML- Compiler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>compiler</h1>
+    </header>
+    <main>
+        <section id="input">
+            <form action="">
+                <textarea name="codeblocs" id="code" cols="30" rows="10"></textarea>
+
+
+                <button class="buttons" type="reset" id="reset">reset</button>
+                <span>
+                    <button class="buttons" type="button" id="lexical">mini lexical analysez</button>
+                    <button class="buttons" type="button" id="syntax">mini syntax analysez</button>
+                </span>
+
+
+            </form>
+        </section>
+        <br>
+        <br>
+        <br>
+        <section id="output">
+            <!-- Lexical -->
+            <div id="l" class="hide">
+                <p><span id="outputHeader">Primitive :</span><span class="spans" id="prim"></span></p>
+                <p><span id="outputHeader">Structured :</span><span class="spans" id="struct"></span></p>
+                <p><span id="outputHeader">identifiers :</span><span class="spans" id="ident"></span></p>
+                <p><span id="outputHeader">Operators :</span><span class="spans" id="op"></span></p>
+                <p><span id="outputHeader">reserved :</span><span class="spans" id="res"></span></p>
+            </div>
+            <!-- Syntax -->
+            <div id="s" class="hide">
+                <p class="results"></p>
+            </div>
+
+
+        </section>
+        <br>
+
+
+        <script src="script.js"></script>
+    </main>
+</body>
+
+</html>
+
+<!-- testing string: long integer are primitive String is not = / + operators for if keywords
+integer out = 10;
+    const negate = /(\S+if)|(\S+if\S+)|(if\S+)|(\S+else)|(\S+else\S+)|(else\S+)|(\S+break)|(\S+break\S+)|(break\S+)|(\S+switch)|(\S+switch\S+)|(switch\S+)|(\S+and)|(\S+and\S+)|(and\S+)|(\S+or)|(\S+or\S+)|(or\S+)|(\S+in)|(\S+in\S+)|(in\S+)|(\S+next)|(\S+next\S+)|(next\S+)|(\S+for)|(\S+for\S+)|(for\S+)|(\S+do)|(\S+do\S+)|(do\S+)|(\S+while)|(\S+while\S+)|(while\S+)|(\S+default)|(\S+default\S+)|(default\S+)
+-->
