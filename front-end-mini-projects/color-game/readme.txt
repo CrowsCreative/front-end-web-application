@@ -16,3 +16,7 @@ Language used are:
 - Javascript
 - CSS
 - HTML
+
+try this application via this link:
+===================================
+http://crows-blogs.epizy.com/ColorGame/index.html
