@@ -1,0 +1,7 @@
+===========================================
+all libraries required in this application
+===========================================
+note!:
+------
+it's not required to use JQuery anymore
+===========================================
