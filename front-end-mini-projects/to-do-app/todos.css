@@ -1,0 +1,107 @@
+body
+{
+    
+    font-family: Roboto;
+    background: -webkit-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* FF3.6+ */
+    background:     -ms-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* IE10 */
+    background:      -o-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* Opera 11.10+ */
+    background:         linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* W3C */
+}
+
+h1
+{
+    background: #2980b9;
+    color: whitesmoke;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: Cairo;
+}
+
+ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li
+{
+    background: #fff;
+    height: 40px;
+    line-height: 40px;
+    color: #666;
+}
+li:hover span
+{
+    width: 40px;
+    opacity: 100%;
+}
+span
+{
+    background: #e74c3c;
+    color: white;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    width: 0px;
+    display: inline-block;
+    opacity: 0;
+    transition: 0.2s linear;
+}
+input
+{
+    font-size: 18px;
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    color: #2980b9;
+    outline: none;
+    border: 2px solid #f7f7f7;
+    
+}
+input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(172, 172, 172);
+    opacity: 1; /* Firefox */
+  }
+  
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(172, 172, 172);
+  }
+  
+input::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(172, 172, 172);
+  }
+input:focus
+{
+    outline: none;
+    background: white;
+    border: 2px solid #2980b9;
+}
+li:nth-of-type(2n)
+{
+    background: #f7f7f7;
+}
+#container
+{
+    background: #f7f7f7;
+    width: 360px;
+    margin: 100px auto;
+    box-shadow: 0 0 3px  rgba(0, 0, 0, 0.1);
+}
+.completed
+{
+    color: gray;
+    text-decoration: line-through;
+    
+}
+
+.fa-plus-square
+{
+    float: right;
+    font-size: 35px;
+}
