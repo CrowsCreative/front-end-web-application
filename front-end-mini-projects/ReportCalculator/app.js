@@ -144,7 +144,7 @@ buttons[0].addEventListener("click", ()=>
        
         results = reportCalculator(units);
         mean = meanSet(results);
-        showResults(mean, content, form.childNodes.item(1).childNodes.item(3).value);
+        showResults(mean.toFixed(2), content, form.childNodes.item(1).childNodes.item(3).value);
         content.parentElement.parentElement.style.display = "block";
         
 })
