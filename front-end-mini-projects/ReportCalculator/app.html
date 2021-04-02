@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raport calculator</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1><span>Report</span> Calculator</h1>
+        </header>
+        <section id="resutlts">
+            <div class="wrapper">
+                <div class="popup">
+                    <span class="close-popup">X</span>
+                    <div class="content">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="menu">
+            <form action="" class="form itemsgroup box">
+                <div class="form-group ">
+                    <label for="username" class="label">username:</label>
+                    <input type="text" name="username" required>
+                </div>
+                <div>
+                    <div class="form-group module item">
+                        <span class="exit" style="display: none;"><i class="far fa-trash-alt"></i></span>
+                        <label for="module" class="label">Module:</label>
+                        <input type="text" name="module" required>
+                        <span class="inputs">
+                            <label for="Exam">Exam:</label>
+                            <input type="number" name="Exam" min="0" max="20" required>
+                            <label for="TD">TD:</label>
+                            <input type="number" name="TD" min="0" max="20">
+                            <label for="username">TP:</label>
+                            <input type="number" name="TP" min="0" max="20">
+                            <label for="conf">conf:</label>
+                            <input type="number" name="conf" min="0" max="20" required>
+                        </span>
+                    </div>
+                </div>
+            </form>
+            <div class="form">
+                <div class="form-group">
+                    <div class="center">
+                        <button type="submit"><i class="fas fa-calculator"></i> perfom calculation</button><button
+                            class="btn" type="button"><i class="fas fa-plus-circle"></i> Add module</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+    <script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>
