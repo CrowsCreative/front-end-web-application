@@ -1,0 +1,1 @@
+image used as svg for this application
